@@ -1,0 +1,30 @@
+table{
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+table,th,td{
+    border: solid black 1px;
+    padding:0.5em;
+}
+
+thead{
+    background-color: khaki;
+}
+
+h1.info{
+    color:green;
+}
+
+h1.error{
+    color:red;
+}
+
+p.info{
+    border:2px solid green;
+    padding:1em;
+}
+
+p.error{
+    border:2px dashed red;
+    padding:1em;
+}

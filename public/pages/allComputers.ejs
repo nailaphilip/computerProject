@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computers</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <main>
+        <% if(result.length===0){%>
+            <h1>No computers found!</h1>
+        <% } else{ %>
+            <h1>All Computers</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Processor</th>
+                        <th>Amount</th>
+                        <th>Imagename</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% result.forEach(computer=>{ %>
+                        <tr>
+                            <td><%= computer.id %></td>
+                            <td><%= computer.name %></td>
+                            <td><%= computer.type %></td>
+                            <td><%= computer.processor %></td>
+                            <td><%= computer.amount %></td>
+                            <td><%= computer.imagename %></td>
+                            <td><img src="/images/<%= computer.imagename %>" width="40" alt=""></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } %>
+        <a href="/"><button>Menu</button></a>
+    </main>
+</body>
+</html>

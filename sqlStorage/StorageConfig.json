@@ -1,0 +1,6 @@
+{
+    "sqlStatements":"sqlStatements.json",
+    "connectionOptions":"databaseConnectionOptions.json",
+    "parameterFunctions":"parameterFunctions.js",
+    "statuscodes":"statusCodes.js"
+}

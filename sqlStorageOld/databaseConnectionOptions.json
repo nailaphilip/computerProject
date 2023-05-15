@@ -1,0 +1,7 @@
+{
+    "host": "localhost", 
+    "user": "oliver",
+    "password": "12345",
+    "database": "computerdb",
+    "allowPublicKeyRetrieval": true 
+}

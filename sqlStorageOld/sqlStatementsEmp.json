@@ -1,0 +1,10 @@
+{
+    "getAll":["select * from employee"],
+    "getOne":[
+        "select * from employee where employeeId=?"
+    ],
+    "insert":[
+        "insert into employee values(?,?,?,?,?,?)"
+    ],
+    "primaryKey":"employeeId"
+}

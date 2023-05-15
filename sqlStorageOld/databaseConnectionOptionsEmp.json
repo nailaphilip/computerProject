@@ -1,0 +1,7 @@
+{
+    "host": "localhost", 
+    "user": "zeke",
+    "password": "1234",
+    "database": "employeedb",
+    "allowPublicKeyRetrieval": true 
+}

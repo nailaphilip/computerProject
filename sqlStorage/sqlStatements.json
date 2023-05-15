@@ -1,0 +1,19 @@
+{
+    "getAll":["select id, name, type, processor, amount, imagename from computer"],
+    "getOne":[
+        "select id, name, type, processor, amount, imagename from computer",
+        "where id=?"
+    ],
+    "insert":[
+        "insert into computer (id, name, type, processor, amount, imagename)", 
+        "values(?,?,?,?,?,?)"
+    ],
+    "update":[
+        "update computer set name=?, type=?, processor=?, amount=?, imagename=?",
+        "where id=?"
+    ],
+    "remove":[
+        "delete from computer where id=?"
+    ],
+    "primaryKey":"id"
+}

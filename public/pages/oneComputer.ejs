@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Computer data</h1>
+            <p>Id: <%= computer.id %></p>
+            <p>Name: <%= computer.name %></p>
+            <p>Type: <%= computer.type %></p>
+            <p>Processor: <%= computer.processor %></p>
+            <p>Amount: <%= computer.amount %></p>
+            <% if(computer.imagename){ %>
+                <img src="/images/<%= computer.imagename %>" alt="Image of <%= computer.name %>">
+            <%}%>
+            
+        </section>
+        <a href="/"><button>Menu</button></a>
+    </main>   
+</body>
+</html>

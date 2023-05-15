@@ -1,0 +1,12 @@
+{
+    "getAll":["select id, name, type, processor, amount, imagename from computer"],
+    "getOne":[
+        "select id, name, type, processor, amount, imagename from computer",
+        "where id=?"
+    ],
+    "insert":[
+        "insert into computer (id, name, type, processor, amount, imagename)", 
+        "values(?,?,?,?,?,?)"
+    ],
+    "primaryKey":"id"
+}
